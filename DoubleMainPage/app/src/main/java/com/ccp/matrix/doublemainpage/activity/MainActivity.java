@@ -47,30 +47,23 @@ public class MainActivity extends AppCompatActivity implements Receiver {
             if (action == MotionEvent.ACTION_DOWN) {
                 mLastX = motionEvent.getX();
                 mLastY = motionEvent.getY();
+            } else if (action == MotionEvent.ACTION_MOVE) {
+                float currentX = motionEvent.getX();
+                float currentY = motionEvent.getY();
+                float xDiff = Math.abs(currentX - mLastX);
+                float yDiff = Math.abs(currentY - mLastY);
 
-                int currentItem = viewPager.getCurrentItem();
-                if (currentItem == 0) {
-                    if (adapter != null && adapter.oneMainFragment != null) {
-                        adapter.oneMainFragment.slide();
+                if (intercept && xDiff > mTouchSlop && xDiff * 0.5f > yDiff) {
+                    if (currentX > mLastX) {
+                        //向右滑
+                        int currentItem = viewPager.getCurrentItem();
+                        if (currentItem == 0) {
+                            if (adapter != null && adapter.oneMainFragment != null) {
+                                adapter.oneMainFragment.slide();
+                            }
+                        }
                     }
                 }
-            } else if (action == MotionEvent.ACTION_MOVE) {
-//                float currentX = motionEvent.getX();
-//                float currentY = motionEvent.getY();
-//                float xDiff = Math.abs(currentX - mLastX);
-//                float yDiff = Math.abs(currentY - mLastY);
-//
-//                if (intercept && xDiff > mTouchSlop && xDiff * 0.5f > yDiff) {
-//                    if (currentX > mLastX) {
-//                        //向右滑
-//                        int currentItem = viewPager.getCurrentItem();
-//                        if (currentItem == 0) {
-//                            if (adapter != null && adapter.oneMainFragment != null) {
-//                                adapter.oneMainFragment.slide();
-//                            }
-//                        }
-//                    }
-//                }
             }
         }
     }
