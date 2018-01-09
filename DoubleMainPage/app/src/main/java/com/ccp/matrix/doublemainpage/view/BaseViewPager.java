@@ -8,7 +8,7 @@ import android.view.MotionEvent;
 import android.view.ViewConfiguration;
 
 /**
- * Created by Administrator on 2018/1/6.
+ * Created by Tony on 2018/1/6.
  */
 
 public class BaseViewPager extends ViewPager {

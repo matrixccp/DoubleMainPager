@@ -13,7 +13,7 @@ import com.ccp.matrix.doublemainpage.R;
 import com.ccp.matrix.doublemainpage.view.Receiver;
 
 /**
- * Created by Administrator on 2018/1/6.
+ * Created by Tony on 2018/1/6.
  */
 
 public class CustomDiscoverFragment extends Fragment{

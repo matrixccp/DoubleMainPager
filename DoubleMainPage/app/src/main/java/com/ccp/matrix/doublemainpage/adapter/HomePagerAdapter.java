@@ -11,7 +11,7 @@ import com.ccp.matrix.doublemainpage.fragment.ThreeFragment;
 import com.ccp.matrix.doublemainpage.fragment.TwoFragment;
 
 /**
- * Created by Administrator on 2018/1/6.
+ * Created by Tony on 2018/1/6.
  */
 
 public class HomePagerAdapter extends BaseAdapter {

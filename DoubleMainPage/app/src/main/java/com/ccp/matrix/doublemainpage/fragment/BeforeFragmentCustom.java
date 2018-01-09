@@ -11,7 +11,7 @@ import android.widget.TextView;
 import com.ccp.matrix.doublemainpage.R;
 
 /**
- * Created by Administrator on 2018/1/6.
+ * Created by Tony on 2018/1/6.
  */
 
 public class BeforeFragmentCustom extends CustomDiscoverFragment {

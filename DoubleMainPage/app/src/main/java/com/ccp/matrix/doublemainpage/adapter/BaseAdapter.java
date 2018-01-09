@@ -12,7 +12,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 /**
- * Created by Administrator on 2018/1/6.
+ * Created by Tony on 2018/1/6.
  */
 
 public abstract class BaseAdapter extends PagerAdapter {

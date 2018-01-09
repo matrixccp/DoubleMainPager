@@ -18,7 +18,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
 /**
- * Created by Administrator on 2018/1/6.
+ * Created by Tony on 2018/1/6.
  */
 
 public class OneMainFragment extends Fragment implements Receiver{
